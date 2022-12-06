@@ -1,108 +1,180 @@
-body {background-color: #aa4487; display: flex; flex-direction:column-reverse; }
+html {
+	font-size: 62.5%;
+	overflow-x: hidden; /* --- https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x --- */
+}
 
-header {text-align: center;
+body{
+	background-color: #dddddd;
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+.boxed-page{
+	margin: 0 auto;
+	margin-top: 15rem;
+	margin-bottom: 6rem;
+	position: relative;
+	box-shadow: 0 15px 30px 0 rgba(5, 5, 5, 1), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 1200px) {
+	.boxed-page {
+		width: 1024px; }
+}
+
+
+
+.jumbotron{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+	min-height: 350px;}
+	@media (min-width: 1024px) {     /* --- cuando el ancho sea mayor a 1024 px --- */
+		.jumbotron {				/* --- este elemento --- */
+		  min-height: 45vh; } }		/* --- tendra una altura minima de 80vh --- */
+
+
+
+  .jumbotron:before {
+    position: absolute;
+    display: block;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0.8;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+
+
+.container-text{
+	text-align: center;
 	color: white;
-	order:3;
+	margin-top: 250px;
+	margin-bottom: 100px;}
+	h1{font-size: 50px;}
+
+.container-text p{font-size: 25px;}
+
+
+
+
+li{list-style: none; font-size: 20px; font-family: ubuntu;}
+
+ul{
+	display: flex; 
+	justify-content: space-evenly; 
+	height: 30px; 
+	border-bottom: solid 1px #aaaaaa; 
+	padding-bottom: 15px;
+	padding-top: 15px;
+	margin: 0;
 }
 
 
-/* Primera seccion de imagenes */
-
-
-.article_01 .section_01{background-color: #ff9911;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;}
-
-.article_01 img{width: 300px;
+.about section{
+	text-align: center;
 	background-color: #ffffff;
-	border-radius: 25px;
-	margin: 10px;}
+	margin: 0 auto;
+	padding-top: 140px;
+	padding-bottom: 140px;
 
-.section_01 p{width: 300px;
-	background-color: #55aa11;
-	text-align: left;}
-
-.article_01{ margin-top: 20px;}
-
-
-
-/* Segunda seccion de imagenes - Arboles */
-
-
-.article_02 img{
-	width: 250px;
-	margin: 10px;
-	background-color: #55ee99;
 }
 
-.article_02 img:hover{
-	transform: scale(1.25);
-	border-radius: 30px;
-	background-color: #54ed43;
-}
 
-.article_02 .section_01{
-	background-color: red;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-}
+.about section h2 {margin: 0 auto; padding-bottom: 80px;}
 
-.article_02 p{
-	width: 250px;
+.about section p {margin: 0 auto; padding-left: 150px; padding-right: 150px; line-height: 1.8em;}
+
+
+
+
+
+
+
+.skills{ 
+		background: white;
+    background: -webkit-linear-gradient(to right, rgba(245, 175, 25,0.6), rgba(241, 39, 17, 0.6));
+    background: linear-gradient(to right, rgba(245, 175, 25,0.6), rgba(241, 39, 17, 0.6)); 
 }
 
 
 
-
-
-/* Tercera seccion de imagenes - Carros */
-
-.article_03 .section_01{
-	background-color: #888888;
-	padding-bottom: 100px;
-	padding-top: 100px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
+.skills .skills-text{
+	text-align: center;
+	color: #ffffff;
+	padding-top: 80px;
 }
 
-.article_03 img{width: 230px; margin: 10px; background-color: #000000; transition: all 1s;}
-
-.article_03 img:hover{transform: scale(1.2); background-color: white;}
-
-.article_03 p{width: 230px;}
+.skills .skills-text h2{
+	margin: 0 auto;
+}
 
 
+.skills .icons {
+	display: flex; 
+	flex-wrap: wrap; 
+	justify-content: center;
+	margin: 0px 100px;
+}
 
-
-
-
-/* cuarta seccion de imagenes - deportes */
-
-.article_04 .section_01{
+.skills .icons div{
+	margin:50px;
 	display: flex;
 	flex-direction: column;
+}
+
+
+.skills img{
+	max-width: 100px;
+	transition: all 150ms;
+}
+
+.skills img:hover{
+	transform: scale(0.8);
+}
+
+.icons h3{
+	margin: 0 auto;
+	color:#ffffff;
+}
+
+
+.work{
+	background-color: #eeeeee;
+	text-align: center; 
+	margin: 0 auto;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.work h2{margin: 0}
+
+
+.projects{
+	display: flex; 
+	justify-content: center;
+}
+
+.projects div{
 	background-color: white;
-
+	margin: 20px;
+	max-width: 250px;
+	transition: all 150ms;
+	border-radius: 3%;
 }
 
-.article_04 .section_01 .div_deporte{
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	padding-top: 100px;
-	padding-bottom: 120px;
+.projects div:hover{
+	transform: translate(-7px,-7px);
+	box-shadow: 0 15px 20px 0 rgba(5, 5, 5, 0.5), 0 5px 15px 0 rgba(0, 0, 0, 0.08);
 }
 
-/* --------   ADICIONAR LA TRANSICION EN EL ELEMENTO, NO EN EL HOVER    ---------- */
-
-.article_04 img{width: 200px; background-color: #eeeeee; padding: 50px; margin: 5px;transition: all 1.5s 70ms;}
-.article_04 img:hover{transform: rotate(360deg) scale(1.05,0.9);border-radius: 70%}
 
 
-.article_04 button {width: 200px; margin: auto; margin-bottom: 50px; transition: all 1s;}
-.article_04 button:hover{background-color: #dd88dd}
+.projects img{max-width: 250px;}

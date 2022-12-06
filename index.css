@@ -25,7 +25,11 @@ body{
 		width: 1024px; }
 }
 
-
+@media (max-width: 430px){
+	.boxed-page{
+		margin: 0 auto;
+	}
+}
 
 .jumbotron{
 	padding-top: 80px;

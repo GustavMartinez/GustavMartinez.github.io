@@ -96,10 +96,12 @@ ul{
 
 .about section p {margin: 0 auto; padding-left: 150px; padding-right: 150px; line-height: 1.8em;}
 
-
-
-
-
+@media (max-width: 550px){
+	.about section p{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
 
 
 .skills{ 

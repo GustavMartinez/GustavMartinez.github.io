@@ -136,6 +136,15 @@ ul{
 	flex-direction: column;
 }
 
+@media(max-width:550px){
+	.skills .icons{
+		margin: 0px;
+	}.skills .icons div{
+	margin:20px;
+	} .skills .skills-text p{
+		padding: 0px 30px;
+	}
+}
 
 .skills img{
 	max-width: 100px;

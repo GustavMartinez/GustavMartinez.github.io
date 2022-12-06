@@ -1,0 +1,199 @@
+body{
+    width: 100%; 
+    margin:0;
+    font-family: 'Lato', sans-serif;
+    background-color: #dddddd;
+}
+
+.jumbotron{
+    background-size: cover;
+    margin: 0 auto;
+    background-position: 50% 50%;
+}
+
+
+.container{
+    width: 80%;
+    min-height: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 40px;
+    margin: 400px 30px 50px
+}
+
+p{margin: 0px 30px 100px}
+
+
+
+
+@media all and (max-width:960px) {
+    .container{
+        width:90%;
+    }
+    .jumbotron{
+        width: 100%;
+    }
+    h1{
+        margin: 350px 0px 30px;
+    }
+    p{
+        margin: 0px 0px 50px;
+    }
+}
+
+
+
+@media all and (max-width:500px){
+    .container{
+        margin-top: 0;
+    }
+    .jumbotron{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 35px;
+        margin: 200px 30px 10px 0px;
+        color: white;
+    }
+    p{
+        margin: 30px 30px 30px 0px;
+        color: white;
+    }
+}
+
+
+.jugadores{
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin:50px 150px;
+    background-color: #99e1ee;
+
+}
+
+
+
+@media (min-width:1000px){
+    .jugadores{
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1000px){
+    .jugadores{
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:500px){
+    .jugadores{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+.jugadores div{
+    background-color: #eeeeee;
+    margin:50px 30px;
+    width: 400px;
+    min-height: 400px;
+}
+
+
+
+
+.jugador-01{
+    background-size: cover;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    border-radius: 3%;
+    transition: all 150ms;
+}
+
+.jugador-01:hover{
+    box-shadow: 15px 15px 20px #555555;
+    transform: translate(0px, -15px);
+
+}
+
+
+.jugador-02{
+    background-size: cover;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    transition: all 150ms;
+}
+
+.jugador-02:hover{
+    transform: translate(0px, -15px);
+
+}
+
+.jugador-03{
+    background-size: cover;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    transition: all 150ms;
+}
+
+.jugador-03:hover{
+    transform: translate(0px, -15px);
+
+}
+
+.jugador-04{
+    background-size: cover;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    transition: all 150ms;
+}
+
+.jugador-04:hover{
+    transform: translate(0px, -15px);
+
+}
+.jugador-05{
+    background-size: cover;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    transition: all 150ms;
+}
+
+.jugador-05:hover{
+    transform: translate(0px, -15px);
+
+}
+
+.jugador-06{
+    background-size: cover;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    transition: all 150ms;
+}
+
+.jugador-06:hover{
+    transform: translate(0px, -15px);
+
+}
+
+.jugador-07{
+    background-size: cover;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    transition: all 150ms;
+}
+
+.jugador-07:hover{
+    transform: translate(0px, -15px);
+
+}

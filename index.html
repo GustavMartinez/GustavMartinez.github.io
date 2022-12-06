@@ -3,86 +3,134 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="description of the page"> <!--descripcion que aparece en los buscadores-->
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<title> Projeto sem titulo</title>
+	<title>Porfolio</title>
+
+	<link rel="stylesheet" type="text/css" href="index_2.css">
 </head>
 <body>
-
-	<header>
-		<nav>
-			
-		</nav>
-		<h1>Experiments</h1>
-		<p>This page is for experiments in HTML5 and CSS3 hahaha</p>
-		<p>El body tiene flexbox reverse para organizar los elementos al reves.</p>
-	</header>
-
-
-	<article class ='article_01'>
-		<section class ='section_01'>
-			<p>
-			Imagenes organizadas utilizando flexbox</br>
-			display: flex;</br>
-			flex-wrap: wrap;</br>
-			justify-content: space-evenly;
-			</p>
-			<img src="fox.png">
-			<img src="crocodile.png">
-			<img src="squid.png">
-		</section>
-	</article>
-
-
-	<article class ='article_02'>
-		<section class ='section_01'>
-			<p>
-			Imagenes organizadas utilizando flexbox</br>
-			display:flex</br>
-			flex-wrap:wrap</br>
-			Este article fue colocado en primer lugar con css, "order:1" en los elementos hijos del body</br>
-			La section tiene padding</br>
-
-			</p>
-			<img src="tree_icon_01.png">
-			<img src="tree_icon_02.png">
-			<img src="tree_icon_03.png">
-			<img src="tree_icon_04.png">
-		</section>
-	</article>
-
-	<article class ='article_03'>
-		<section class='section_01'>
-			<p>
-				Imagenes organizadas utilizando flexbox, transform y transition en hover
-			</p>
-			<img src="car_icon_01.png">
-			<img src="car_icon_02.png">
-			<img src="car_icon_03.png">
-			<img src="car_icon_04.png">
-			<img src="car_icon_05.png">
-		</section>
-	</article>
-
-	<article class ='article_04'>
-		<section class='section_01'>
-			<p>
-				Imagenes organizadas utilizando flexbox, transform y transition en hover. transform: rotate(360deg) scale(1.05,0.9)</br>
-				El borde esta en porcentaje!
-			</p>
-			
-			<div class = "div_deporte">
-				<img src="sport_icon_01.png">
-				<img src="sport_icon_02.png">
-				<img src="sport_icon_03.png">
+	<div class = "boxed-page">
+		<div class = "container">
+			<div class="jumbotron" style="background-image:url(images/image_01.jpg)">
+				<div class = "container-text">
+					<h1>Hello! I`m Gustavo</h1>
+					<p>Welcome to my portfolio!</p>
+				</div>
 			</div>
+		
+		
 
-			<button>
-				<h1>button without action</h1>
-			</button>
+			<header>
+				<nav>
+					<ul>
+						<li>About</li>
+						<li>Skills</li>
+						<li>Work</li>
+						<li>Education</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
 
-		</section>
-	</article>
+		<article class="about">
+			<section>
+				<h2> About</h2>
+				<p>Creative junior web developer with two years of experience developing small business websites and improving organic search rankings with SEO. Looking for a great career in the Information Technology industry. Autodidact and never-ending learner, with strong attention to detail and quality for development of the visual appearance and usability of a website.</p>
+			</section>
+		</article>
+
+
+		<article class="skills">
+			<section>
+				<div class="skills-text">
+					<h2>Skills</h2>
+					<p>This are my main skills in web development and coding</p>
+				</div>
+				<div class = "icons">
+					<div>
+						<img src="images/html_out.png">
+						<h3>Html</h3>
+					</div>
+					<div>
+						<img src="images/css_out.png">
+						<h3>Css</h3>
+					</div>
+					<div>
+						<img src="images/javascript_out.png">
+						<h3>JavaScript</h3>
+					</div>
+					<div>
+						<img src="images/postgresql_out.png">
+						<h3>SQL</h3>
+					</div>
+					<div>
+						<img src="images/python_out.png">
+						<h3>Python</h3>
+					</div>
+					<div>
+						<img src="images/aws_out.png">
+						<h3>AWS</h3>
+					</div>
+					<div>
+						<img src="images/photoshop_out.png">
+						<h3>Photoshop</h3>
+					</div>
+					<div>
+						<h3>Indesign</h3>
+					</div>
+				</div>
+				
+
+			</section>
+		</article>
+
+
+
+
+		<article class="work">
+			<section>
+				<div>
+					<h2>Work</h2>
+					<p>trabajos desarrollados</p>					
+				</div>
+
+				<div class="projects">
+					
+					<a href="https://www.mancorvidros.com.br">	
+					<div class="mancor">
+						<img src="images/mancor.png">
+						<h3>Mancor</h3>
+						<p>Site desenvolvido para pequena empresa de manutencao de cortina de vidro</p>
+					</div>
+					</a>
+					
+					<a href="Experiments/index.html">
+					<div class="css-experiments">
+						<img src="images/sport_icon_01.png">
+						<h3>Css Experiments</h3>
+					</div>
+					</a>
+
+					<a href="chess/index.html">
+					<div class="chess">
+						<img src="images/chess.jpg">
+						<h3>Chess players</h3>
+					</div>
+					</a>
+
+				</div>
+
+			</section>
+		</article>
+
+
+
+	
+		<article class="education">
+			<section>
+				
+			</section>
+		</article>
+	</div>
 
 </body>
 </html>

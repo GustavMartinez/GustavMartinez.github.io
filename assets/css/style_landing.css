@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+#main-container{
+    margin: 200px auto 50px;
+    max-width: 1200px;
+    height: 70vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#box-container{
+    height: 100%;
+    display: flex;
+    align-items:flex-end;
+}
+
+#box-container > div{
+    height: 60%;
+    width: 33%;
+}
+
+#data-science-box{
+    border: 1px solid black;
+}
+
+#fullstack-box{
+    border: 1px solid black;
+}
+
+#gis-box{
+    border: 1px solid black;
+}

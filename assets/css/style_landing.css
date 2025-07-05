@@ -25,12 +25,12 @@ h1, p {
     text-align: left;
 }
 
-h1{
+.header h1{
     font-size: 3rem;
     color: var(--azul-oscuro);
 }
 
-p{
+.header p{
     font-size: 1.5rem;
     margin-top: 0.5rem;
     color: var(--blanco);
@@ -46,6 +46,15 @@ p{
     flex-direction: column;
     align-items: left;
     justify-content:space-between;
+    border-radius: 0px 40px 0 0;
+}
+
+#main-container > div {
+    align-self: flex-start;
+    margin-left: 40px;
+    border-bottom: 1px solid var(--azul-claro);
+    padding-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 
@@ -53,36 +62,64 @@ p{
     margin-top: 60px;
     width: 100%;
     display: flex;
-    align-items:flex-end;
 }
 
 #box-container > div {
     flex: 1;
     height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 1.2rem;
-    font-weight: bold;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
     color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+#box-container h2{
+    margin: 0 30px;
+}
+
+#box-container p{
+    margin: 10px 30px;
+    font-weight: 100;
+    font-size: smaller;
+}
 
 #box-container > div:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
 }
+
 
 #data-science-box {
-    background: linear-gradient(135deg, var(--azul-medio), var(--dorado-suave));
+    background: linear-gradient(to bottom, var(--gris-medio), #d4af7f);
 }
 
+
+
+
+
+
+
 #fullstack-box {
-    background: linear-gradient(135deg, #1c2f40, #c7a773);
+    background: linear-gradient(to bottom, var(--gris-medio), #d4af7f);
+
 }
 
 #gis-box {
-    background: linear-gradient(135deg, #162b3c, #d9b480);
+    background: linear-gradient(to bottom, var(--gris-medio), #d4af7f);
+
+}
+
+@media (max-width: 768px) {
+    #box-container {
+        flex-direction: column;
+    }
+
+    #box-container > div {
+        width: 100%;
+        margin-bottom: 1rem;
+        height: 200px;
+    }
 }

@@ -65,7 +65,7 @@ h1, p {
     display: flex;
 }
 
-#box-container > div {
+#box-container .box {
     flex: 1;
     height: 350px;
     font-size: 1.2rem;
@@ -87,20 +87,20 @@ h1, p {
     font-size: smaller;
 }
 
-#box-container > div:hover {
+#box-container .box:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
 }
 
+.box-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
 #data-science-box {
     background: linear-gradient(to bottom, var(--gris-medio), #d4af7f);
 }
-
-
-
-
-
 
 
 #fullstack-box {

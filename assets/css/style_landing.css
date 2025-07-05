@@ -3,6 +3,7 @@
     --azul-medio: #1e3a5f;
     --dorado-suave: #d4af7f;
     --blanco: #f4f4f4;
+    --gris-claro: #ccc;
 }
 
 
@@ -31,35 +32,51 @@ p{
 }
 
 #main-container{
-    margin: 200px auto 50px;
-    max-width: 1200px;
-    height: 70vh;
-    background-color: aquamarine;
+    margin: 150px auto 50px;
+    max-width: 1000px;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
 #box-container{
-    height: 100%;
+    margin-top: 60px;
+    width: 100%;
     display: flex;
+    gap: 1rem;
     align-items:flex-end;
 }
 
-#box-container > div{
-    height: 60%;
-    width: 33%;
+#box-container > div {
+    flex: 1;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    color: var(--blanco);
 }
 
-#data-science-box{
-    background: linear-gradient(90deg, rgb(157, 157, 241), rgb(243, 222, 176));
-    border: 1px solid black;
+#box-container > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-#fullstack-box{
-    border: 1px solid black;
+#data-science-box {
+    background: linear-gradient(135deg, var(--azul-medio), var(--dorado-suave));
 }
 
-#gis-box{
-    border: 1px solid black;
+#fullstack-box {
+    background: linear-gradient(135deg, #1c2f40, #c7a773);
+}
+
+#gis-box {
+    background: linear-gradient(135deg, #162b3c, #d9b480);
 }

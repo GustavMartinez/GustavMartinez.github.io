@@ -96,6 +96,7 @@ h1, p {
   text-decoration: none;
   color: inherit;
   display: block;
+  width: 33.333%;
 }
 
 #data-science-box {

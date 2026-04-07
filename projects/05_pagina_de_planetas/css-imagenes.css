@@ -1,0 +1,15 @@
+.contenedor{
+	display: flex;
+	border:2px solid #999999;
+	flex-direction: row;/* Shorthand for flex-wrap and flex-direction: flex-flow: column wrap;*/
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	background-color: #eeeeee;
+	align-content: space-around;
+	gap:10px 10px; /*row-gap column-gap*/
+}
+img{
+	width:400px;
+	border:2px dotted #268025;
+}
+

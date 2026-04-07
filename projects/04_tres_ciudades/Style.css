@@ -1,0 +1,59 @@
+body{
+	background-image: url(background.jpg);
+	background-size: cover;
+}
+
+header{
+	background: rgba(0,250,250,1);
+	cursor:pointer;
+}
+
+li{
+	color: rgba(150,150,0,1);
+	list-style: none;
+	display: inline-block;
+}
+
+h1{
+	color: rgba(150,0,0,0.5);
+	background: rgba(200,200,200,1);
+	text-align: center;
+	cursor:default;
+}
+
+h2:hover
+	{
+	text-align: center;
+	color: rgba(255, 255, 255, 1);
+}
+
+#ciudad{
+	
+	color: rgba(150,30,20,1);
+	background: rgba(10,10,60,0.3);
+	text-align:justify;
+	cursor:pointer;
+	width: 350px;
+	display: inline-block;
+	border:2px solid black;
+	border-radius:20px ;
+	padding:15px;
+	margin:15px;
+	
+}
+
+.armenia{color:green; font-family: "Berlin Sans FB";}
+
+/*#pereira{
+	color: rgba(10,100,50,1);
+	background: rgba(5,200,60,0.3);
+	text-align:justify;
+	cursor:pointer;
+}
+
+#armenia{
+	color: rgba(0,100,250,1);
+	background: rgba(5,200,60,0.3);
+	text-align:justify;
+	cursor:pointer;
+}

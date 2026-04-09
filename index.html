@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Martinez | Portfolio</title>
+    <title>Gustavo Martínez | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -39,7 +39,7 @@
 <body class="wealthy-gradient min-h-screen">
 
     <nav class="p-8 flex justify-between items-center max-w-7xl mx-auto sticky top-0 z-50 bg-black/50 backdrop-blur-md">
-        <div class="text-xl font-bold tracking-widest gold-accent">G.MARTINEZ</div>
+        <div class="text-xl font-bold tracking-widest gold-accent">G.MARTÍNEZ</div>
         
         <div class="hidden md:flex gap-8 text-[11px] uppercase tracking-[0.2em] text-gray-400">
             <a href="#proyectos" data-i18n="nav_projects" class="hover:text-[#c5a059] transition-colors">Proyectos</a>
@@ -64,7 +64,7 @@
     </nav>
 
     <section class="h-[70vh] flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Gustavo Martinez</h1>
+        <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Gustavo Martínez</h1>
         <p data-i18n="hero_desc" class="text-gray-400 text-lg md:text-xl max-w-2xl font-light tracking-wide">
             Especialista en <span class="gold-accent">GIS</span>, <span class="gold-accent">Data Science</span> & <span class="gold-accent">Web Development</span>. 
             Soluciones analíticas con un enfoque de excelencia técnica.
@@ -123,7 +123,10 @@
                 <h3 data-i18n="p1_title" class="text-2xl font-semibold mb-3">Sustentabilidad Urbana 2026</h3>
                 <p data-i18n="p1_desc" class="text-gray-500 font-light text-sm mb-6 leading-relaxed">Modelado de expansión urbana utilizando ArcGIS Pro y análisis de cuencas hidrográficas para planificación territorial.</p>
                 <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">Spatial Analysis</span>
                     <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">ArcGIS Pro</span>
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">Qgis</span>
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">ArcGIS Online</span>
                     <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">GeoServer</span>
                 </div>
             </div>
@@ -134,12 +137,16 @@
 
         <div class="project-card card-border bg-[#0a0a0a] p-8 rounded-2xl flex flex-col justify-between" data-category="ds">
             <div>
-                <div class="text-[10px] gold-accent tracking-[0.2em] uppercase mb-4">Machine Learning</div>
+                <div class="text-[10px] gold-accent tracking-[0.2em] uppercase mb-4">Data Science & Environmental Finance</div>
                 <h3 data-i18n="p2_title" class="text-2xl font-semibold mb-3">Predictor de Yield Agrícola</h3>
                 <p data-i18n="p2_desc" class="text-gray-500 font-light text-sm mb-6 leading-relaxed">Algoritmo predictivo basado en Pandas y Seaborn para optimizar la cosecha mediante datos climáticos históricos.</p>
                 <div class="flex flex-wrap gap-2 mb-8">
                     <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">Python</span>
                     <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">Pandas</span>
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">R-RStudio</span>
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">Machine Learning</span>
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">VERRA VM0009</span>
+                    <span class="bg-[#1a1a1a] text-[10px] px-3 py-1 rounded-full text-gray-300">Logistic Regression</span>
                 </div>
             </div>
             <a href="#" class="flex items-center gap-2 text-sm gold-accent hover:underline">
@@ -203,6 +210,7 @@
                     <span class="text-xs border border-gray-800 px-2 py-1 rounded">Python</span>
                     <span class="text-xs border border-gray-800 px-2 py-1 rounded">Pandas</span>
                     <span class="text-xs border border-gray-800 px-2 py-1 rounded">NumPy</span>
+                    <span class="text-xs border border-gray-800 px-2 py-1 rounded">R-RStudio</span>
                 </div>
             </div>
             <div class="p-6 card-border bg-[#050505] rounded-xl text-center">
@@ -270,12 +278,18 @@
                 serv_3_title: "Web GIS Solutions",
                 serv_3_desc: "Development of interactive dashboards and custom web applications for real-time asset visualization.",
                 filter_all: "All",
-                p1_title: "Urban Sustainability 2026",
-                p1_desc: "Urban expansion modeling using ArcGIS Pro and watershed analysis for territorial planning.",
-                view_project: "View Project",
-                p2_title: "Agricultural Yield Predictor",
-                p2_desc: "Predictive algorithm based on Pandas and Seaborn to optimize harvest using historical climate data.",
-                view_notebook: "View Notebook",
+                
+                /* Primer proyecto */
+                p1_title: "Territorial Intelligence: 18 Case Studies (2019-2026)",
+                p1_desc: "A 7-year track record leading spatial, social, and urban analysis. Advanced geographic data modeling to understand complex territorial dynamics and support large-scale decision-making.",
+                view_project: "Read Dossier",
+
+                /* Segundo proyecto */
+                p2_title: "Predictive Modeling for Carbon Markets (VERRA VM0009)",
+                p2_desc: "Implementation of probabilistic models using Logistic Regression under the international VERRA standard. Rigorous analysis of spatial variables to predict deforestation and quantify the viability of corporate carbon credits.",
+                view_notebook: "View Sanitized Code",
+
+                /* Tercer proyecto */
                 p3_title: "Interactive Map Dashboard",
                 p3_desc: "High-end interactive dashboard for real-time asset visualization on Leaflet layers.",
                 view_code: "View Code",
@@ -300,23 +314,24 @@
                 serv_3_title: "Soluciones Web GIS",
                 serv_3_desc: "Desarrollo de dashboards interactivos y aplicaciones web personalizadas para la visualización de activos en tiempo real.",
                 filter_all: "Todos",
+
                 /*Proyecto 1*/
-                p1_title: "Sustentabilidad Urbana 2026",
-                p1_desc: "Modelado de expansión urbana utilizando ArcGIS Pro y análisis de cuencas hidrográficas para planificación territorial.",
-                view_project: "Ver Proyecto",
+                p1_title: "Inteligencia Territorial: 18 Casos de Estudio (2019-2026)",
+                p1_desc: "Trayectoria de 7 años liderando análisis espaciales, sociales y urbanos. Modelado avanzado de datos geográficos para comprender dinámicas territoriales complejas y fundamentar la toma de decisiones a gran escala.",
+                view_project: "Leer Dossier",
+
                 /*Proyecto 2*/
-                p2_title: "Predictor de Yield Agrícola",
-                p2_desc: "Algoritmo predictivo basado en Pandas y Seaborn para optimizar la cosecha mediante datos climáticos históricos.",
-                view_notebook: "Ver Notebook",
+                p2_title: "Modelado Predictivo para Mercados de Carbono (VERRA VM0009)",
+                p2_desc: "Implementación de modelos probabilísticos mediante Regresión Logística bajo el estándar internacional VERRA. Análisis riguroso de variables espaciales para predecir deforestación y cuantificar la viabilidad de créditos de carbono corporativos.",
+                view_notebook: "Ver Código Sanitizado",
+
                 /*Proyecto 3*/
-                p3_title: "Interactive Map Dashboard",
+                p3_title: "Interactive",
                 p3_desc: "Dashboard interactivo de alta gama para visualización de activos en tiempo real sobre capas de Leaflet.",
                 view_code: "Ver Código",
                 /*Proyecto 4*/
-                p1_title: "Sustentabilidad Urbana 2026",
-                p1_desc: "Modelado de expansión urbana utilizando ArcGIS Pro y análisis de cuencas hidrográficas para planificación territorial.",
-                view_project: "Ver Proyecto",
-                /*====== Final de proyectos ====== */
+                /*==================== Final de proyectos ================== */
+
                 skills_title: "Tech Stack & Expertise",
                 cta_title: "¿Tienes un proyecto de <span class='gold-accent'>alto impacto</span>?",
                 cta_desc: "Estoy disponible para colaboraciones estratégicas en proyectos de GIS y Data Science que requieran precisión y diseño excepcional.",
@@ -338,12 +353,18 @@
                 serv_3_title: "Soluções Web GIS",
                 serv_3_desc: "Desenvolvimento de dashboards interativos e aplicações web personalizadas para visualização de ativos em tempo real.",
                 filter_all: "Todos",
-                p1_title: "Sustentabilidade Urbana 2026",
-                p1_desc: "Modelagem de expansão urbana usando ArcGIS Pro e análise de bacias hidrográficas para planejamento territorial.",
-                view_project: "Ver Projeto",
-                p2_title: "Preditor de Produtividade Agrícola",
-                p2_desc: "Algoritmo preditivo baseado em Pandas e Seaborn para otimizar a colheita usando dados climáticos históricos.",
-                view_notebook: "Ver Notebook",
+
+                /* Proyecto 1 */
+                p1_title: "Inteligência Territorial: 18 Estudos de Caso (2019-2026)",
+                p1_desc: "Trajetória de 7 anos liderando análises espaciais, sociais e urbanas. Modelagem avançada de dados geográficos para compreender dinâmicas territoriais complexas e embasar a tomada de decisões em larga escala.",
+                view_project: "Ler Dossiê",
+
+                /* Proyecto 2 */
+                p2_title: "Modelagem Preditiva para Mercados de Carbono (VERRA VM0009)",
+                p2_desc: "Implementação de modelos probabilísticos usando Regressão Logística sob o padrão internacional VERRA. Análise rigorosa de variáveis espaciais para prever o desmatamento e quantificar a viabilidade de créditos de carbono corporativos.",
+                view_notebook: "Ver Código Sanitizado",
+
+                /* Proyecto 3 */
                 p3_title: "Interactive Map Dashboard",
                 p3_desc: "Dashboard interativo de alta qualidade para visualização de ativos em tempo real em camadas Leaflet.",
                 view_code: "Ver Código",
